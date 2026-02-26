@@ -1,0 +1,54 @@
+# Node modules
+/node_modules
+
+# Compiled output
+/dist
+/out-tsc
+/build
+
+# Angular cache
+/.angular/cache
+
+# IDEs and editors
+/.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependency directories
+/.pnpm-store
+/.npm
+
+# Environment files
+src/environments/environment*.ts
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Coverage directory
+/coverage
+
+# Temporary files
+.tmp
+.temp
+
+# Angular CLI config backup
+.angular.json
+
+# ESLint cache
+.eslintcache
+
+# Testing
+/test-results
