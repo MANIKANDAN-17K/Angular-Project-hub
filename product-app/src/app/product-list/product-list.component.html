@@ -1,0 +1,18 @@
+<h2>Product List</h2>
+
+<div class="product-container">
+  <app-product-card
+    *ngFor="let product of products"
+    [product]="product"
+    (productClick)="onProductSelected($event)">
+  </app-product-card>
+</div>
+
+<hr>
+
+<div *ngIf="selectedProduct">
+  <h3>Selected Product Details</h3>
+  <p><strong>Name:</strong> {{ selectedProduct.name }}</p>
+  <p><strong>Price:</strong> ₹{{ selectedProduct.price }}</p>
+  <p><strong>Description:</strong> {{ selectedProduct.description }}</p>
+</div>
