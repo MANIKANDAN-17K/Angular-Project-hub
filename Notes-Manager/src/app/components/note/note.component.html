@@ -1,0 +1,11 @@
+<h2>Notes Manage</h2>
+<input [(ngModel)] = "text" placeholder="write note">
+<button (click) = "add()"> Add</button>
+
+<p *ngIf = "notes.length == 0"> No notes yet</p>
+<ul>
+    <li *ngFor = "let n of notes">
+        {{n.text}}
+        <button (click) = "remove(n.id)">Delete</button>
+    </li>
+</ul>
